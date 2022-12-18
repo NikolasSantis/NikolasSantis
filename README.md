@@ -1,16 +1,25 @@
-### Hi there 👋
+### Saudações! Me chamo Nicolas Santos
 
-<!--
-**NikolasSantis/NikolasSantis** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+- 🌱 Atualmente estou aprendendo Python
+- 🤔 Estou procurando ajuda com meu primeiro emprego
+- ⚡ Curiosidade: O cérebro é o único órgão que deu seu prórprio nome 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<div align="center">
+  <a href="https://github.com/NikolasSantis">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=NikolasSantis&show_icons=true&theme=gotham&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NikolasSantis&layout=compact&langs_count=7&theme=gotham"/>
+</div>
+
+ <img align="center" alt="Rafa-Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
+
+##
+
+<div> 
+  <a href="https://instagram.com/nicolassantos195" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href = "mailto:nicolastigosan@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=blue" target="_blank"></a>
+  
+  
+  ![Snake animation](https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake.svg)
+    
+<div> 

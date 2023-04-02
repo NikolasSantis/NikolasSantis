@@ -244,7 +244,7 @@ project03.addEventListener('mouseout', mouseoutProject03);
 project04.addEventListener('mouseover', mouseoverProject04);
 project04.addEventListener('mouseout', mouseoutProject04);
 
-project_box01.addEventListener('click', project01BoxClicked);
-project_box02.addEventListener('click', project02BoxClicked);
-project_box03.addEventListener('click', project03BoxClicked);
-project_box04.addEventListener('click', project04BoxClicked);
+project01.addEventListener('click', project01BoxClicked);
+project02.addEventListener('click', project02BoxClicked);
+project03.addEventListener('click', project03BoxClicked);
+project04.addEventListener('click', project04BoxClicked);

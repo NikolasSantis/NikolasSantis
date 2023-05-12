@@ -1,3 +1,6 @@
+// Ajustar a largura da box dos projetos da direita
+
+
 const github = document.getElementById("link-github");
 const linkedin = document.getElementById("link-linkedin");
 const gmail = document.getElementById("link-gmail");

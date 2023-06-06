@@ -128,10 +128,11 @@ h6 {
 .type-project {
     background-color: none;
     color: white;
+    display: block;
     align-items: end;
     /*width: inherit;
     height: inherit;*/
-    width: 250px;
+    max-width: 250px;
     height: 35px;
     cursor: normal;
 }
@@ -155,6 +156,15 @@ h6 {
     display: none;
     transition-duration: 3s;
     transition-delay: 1s;
+}
+
+.redirect-button-project {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
 
 .name-project {
@@ -193,7 +203,7 @@ h6 {
     background-color: none;
     color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     /* text-align: justify; */
     overflow: auto;
     width: 210px;

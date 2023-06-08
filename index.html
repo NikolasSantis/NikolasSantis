@@ -7,46 +7,60 @@
     <title>Nicolas Page</title>
 
     <link href="style.css" rel="stylesheet" type="text/css" >
-<body im>
-    <div id="personal-container">
+<body>
+
+    <!-- Container de apresentação -->
+    <section id="personal-container">
         <div id="name"> Nicolas Tiago Gonçalves dos Santos </div>
 
         <div id="personal-data">
             <div class="data"> Student Developer </div>
             <div class="data"> Tremembé, São Paulo - Brazil </div>
         </div>
-    </div>
+    </section>
+    <!-- Fim Container apresentação  -->
 
-    <div id="links-container">
+    <!-- Container de "botões" (não usar tag de botão) de redirect para algumas redes -->
+    <section id="links-container">
 
+        <!-- Botão de GitHub -->
         <div id='link-github' class="redirect" title="Botão que levará ao GitHub">
             <img id="personal-github" class="button" alt="Dicrect GitHub" src="./botoes/github-icon.png"> </img> <br>
             <h6>GitHub</h6>
         </div>
 
+        <!-- Botão de linkedin  -->
         <div id="link-linkedin" class="redirect" title="Botão que levará ao Linkedin">
             <img id="personal-linkedin" class="button" alt="Direct Linkedin" src="./botoes/linkedin-icon.png"> </img>
             <h6>Linkedin</h6>
         </div>
 
+        <!-- Botão Gmail  -->
         <div id="link-gmail" class="redirect" title="Botão que levará a enviar um email para o Gmail">
             <img id="personal-gmail" class="button" alt="Direct Gmail" src="./botoes/gmail-icon.png"> </img>
             <h6>Gmail</h6>
         </div>
 
+        <!-- Botão Instagram  -->
         <div id="link-instagram" class="redirect" title="Botão que levará ao Instagram">
             <img id="personal-instagram" class="button" alt="Direct Instagram" src="./botoes/instagram-icon.png"> </img>
             <h6>Instagram</h6>
         </div>
 
-    </div>
-    <div>
+    </section>
+    <!-- Fim Container de "botões" -->
+
+
+    <!-- Um container de projetos alinhados em 'row' -->
+    <section>
         <div class="topics"> <p1> Projects: </p1> </div>
 
         <div id="projects-container">
 
-            <div id="projects-row01">
+            <!-- 2° 'row' de projetos  -->
+            <section id="projects-row01">
 
+                <!-- Box do 1° projeto da página  -->
                 <div id="project-box-01" class="project-box">
 
                     <div id="type-project01" class="type-project"> Web Development </div>
@@ -62,7 +76,10 @@
 
                     <div id="name-project01" class="name-project"> Login na BOX do Pokemon </div>
                 </div>
+                <!-- Fim da Box do 1° projeto da página  -->
 
+
+                <!-- Box do 2° projeto da página  -->
                 <div id="project-box-02" class="project-box">
 
                     <div id="type-project02" class="type-project"> Web Development </div>
@@ -75,10 +92,15 @@
 
                     <div id="name-project02" class="name-project"> Name project </div>
                 </div>
-            </div>
+                <!-- Fim da Box do 2° projeto da página  -->
 
-            <div id="projects-row02">
+            </section>
+            <!-- Fim da 1° 'row' de projetos  -->
 
+            <!-- 2° 'row' de projetos  -->
+            <section id="projects-row02">
+
+                <!-- Box do 3° projeto da página -->
                 <div id="project-box-03" class="project-box">
                     <div id="type-project03" class="type-project"> Web Development </div>
 
@@ -90,7 +112,9 @@
                     
                     <div id="name-project03" class="name-project"> Name project </div>
                 </div>
+                <!-- Fim da Box do 3° projeto da página  -->
 
+                <!-- Box do 4° projeto da página  -->
                  <div id="project-box-04" class="project-box">
 
                     <div id="type-project04" class="type-project"> Web Development </div>
@@ -103,11 +127,16 @@
                     
                     <div id="name-project04" class="name-project"> Name project </div>
                 </div>
-            </div>
+                <!-- Fim Box do 4° projeto da página  -->
+
+            </section>
+            <!-- Fim da 2° 'row' de projetos  -->
 
         </div>
 
-    </div>
+    </section>
+    <!-- Fim container de projetos alinhados em 'row' -->
+
 
     <script src="./script.js"> </script>
 </body>

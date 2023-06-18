@@ -233,33 +233,13 @@ function project04BoxRender() {
 
 // Bloco de redirect das redes
 
-// Redirect para o Github
+// Redirect para o Github (podia ser feito no html, porém diversifiquei para js)
 function redirectGithub() {
     const urlGit = "https://github.com/NikolasSantis";
     const newTab = window.open(urlGit, '_blank');
     newTab.focus();
 }
 
-// Redirect para o Linkedin
-function redirectLinkedin() {
-    const urlLinkedin = "https://www.linkedin.com/in/nicolas-t-g-santos-51b869262/";
-    const newTab = window.open(urlLinkedin, '_blank');
-    newTab.focus();
-}
-
-// Redirect para o Gmail
-function redirectGmail() {
-    const urlGmail = "https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDsVnfnDjcFdXpMXpFbsncDSpChkLMTNTVcxlcRRQBVSzcGXdjwFpCDzQPVnbzwZDdVBqHQ";
-    const newTab = window.open(urlGmail, '_blank');
-    newTab.focus();
-}
-
-// Redirect para o Instagram
-function redirectInstagram() {
-    const urlInstagram = "https://www.instagram.com/nicolassantos195/";
-    const newTab = window.open(urlInstagram, '_blank');
-    newTab.focus();
-}
 
 // Bloco de chamadas de funções, com uma possível ordem de precedência:
 //  - mouseover
@@ -272,23 +252,18 @@ github.addEventListener('mouseover', mouseoverLinks);
 github.addEventListener('mouseout', mouseoutLinks);
 github.addEventListener('click', redirectGithub);
 
-// Bloco de efeitos visuais no redirect do Linkedin, e no
-// final um redirect em outra aba no Linkedin
+// Bloco de efeitos visuais no redirect do Linkedin
 linkedin.addEventListener('mouseover', mouseoverLinks);
 linkedin.addEventListener('mouseout', mouseoutLinks);
-linkedin.addEventListener('click', redirectLinkedin);
 
-// Bloco de efeitos visuais no redirect do Gmail, e no
-// final um redirect em outra aba no Gmail
+// Bloco de efeitos visuais no redirect do Gmail
 gmail.addEventListener('mouseover', mouseoverLinks);
 gmail.addEventListener('mouseout', mouseoutLinks);
-gmail.addEventListener('click', redirectGmail);
 
-// Bloco de efeitos visuais no redirect do Instagram, e no
-// final um redirect em outra aba no Instagram
+// Bloco de efeitos visuais no redirect do Instagram
 instagram.addEventListener('mouseover', mouseoverLinks);
 instagram.addEventListener('mouseout', mouseoutLinks);
-instagram.addEventListener('click', redirectInstagram);
+
 
 
 // Bloco dos projetos

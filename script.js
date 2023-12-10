@@ -165,53 +165,23 @@ function redirectGithub() {
     newTab.focus();
 }
 
-
-// Bloco de chamadas de funções, com uma possível ordem de precedência:
-//  - mouseover
-//  - mouseout 
-//  - click
-
-// Bloco de efeitos visuais no redirect do Github, e no
-// final um redirect em outra aba no Github  
-github.addEventListener('mouseover', mouseoverLinks);
-github.addEventListener('mouseout', mouseoutLinks);
 github.addEventListener('click', redirectGithub);
 
-// Bloco de efeitos visuais no redirect do Linkedin
-linkedin.addEventListener('mouseover', mouseoverLinks);
-linkedin.addEventListener('mouseout', mouseoutLinks);
+// Funções de animação da página
+function projectDescriptionBoxRender(project) {
+    project.type.classList.toggle('dataProject-activate');
+    project.description.classList.toggle('description');
+    project.box.classList.toggle('project-box-activate');
+    project.name.classList.toggle('dataProject-activate');
+    project.summary.classList.toggle('display');
+}
 
-// Bloco de efeitos visuais no redirect do Gmail
-gmail.addEventListener('mouseover', mouseoverLinks);
-gmail.addEventListener('mouseout', mouseoutLinks);
+function mouseEventProject(project) {
+    project.summary.classList.toggle('summary');
+}
 
-// Bloco de efeitos visuais no redirect do Instagram
-instagram.addEventListener('mouseover', mouseoverLinks);
-instagram.addEventListener('mouseout', mouseoutLinks);
-
-
-
-// Bloco dos projetos
-
-// Efeitos de mouseover e mouseout no 1° projeto 
-project01.addEventListener('mouseover', mouseoverProject01);
-project01.addEventListener('mouseout', mouseoutProject01);
-
-// Efeitos de mouseover e mouseout no 2° projeto
-project02.addEventListener('mouseover', mouseoverProject02);
-project02.addEventListener('mouseout', mouseoutProject02);
-
-// Efeitos de mouseover e mouseout no 3° projeto
-project03.addEventListener('mouseover', mouseoverProject03);
-project03.addEventListener('mouseout', mouseoutProject03);
-
-// Efeitos de mouseover e mouseout no 4° projeto
-project04.addEventListener('mouseover', mouseoverProject04);
-project04.addEventListener('mouseout', mouseoutProject04);
-
-// Quando houver um click no projeto, irá adicionar a descrição do projeto junto
-// ao botão que se clicado, irá abrir o arquivo do projeto em uma nova aba
-project01.addEventListener('click', project01BoxClicked);
-project02.addEventListener('click', project02BoxClicked);
-project03.addEventListener('click', project03BoxClicked);
-project04.addEventListener('click', project04BoxClicked);
+for (let project of projects) {
+    project.img.addEventListener('mouseover', () => mouseEventProject(project));
+    project.img.addEventListener('mouseout', () => mouseEventProject(project));
+    project.img.addEventListener('click', () => projectDescriptionBoxRender(project))
+}

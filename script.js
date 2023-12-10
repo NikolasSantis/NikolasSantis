@@ -122,118 +122,43 @@ function project01BoxClicked() {
     projectBox01Render();
 }
 
-// Caso o projeto seja clicado ou não, a função irá abrir a descrição do projeto ou fechar a descrição.
-// Essa descrição possui um botão para o usuário abrir o projeto em outra aba do navegador
-function projectBox01Render() {
-    if (isClicked01 === true) {
-        typeProject01.classList.add('dataProject-activate');
-        description01.classList.add('description');
-        project_box01.classList.add('project-box-activate');
-        nameProject01.classList.add('dataProject-activate');
-        summary01.setAttribute('style', 'display: none');
+// Conjunto de todos os projetos da página
+const projects = [
+    { 
+        type: document.getElementById("type-project01"),
+        img: document.getElementById("project01"),
+        summary: document.getElementById("summary01"),
+        description: document.getElementById("description01"),
+        name: document.getElementById("name-project01"),
+        box: document.getElementById("project-box-01")
+    },
+    {
+        type: document.getElementById("type-project02"),
+        img: document.getElementById("project02"),
+        summary: document.getElementById("summary02"),
+        description: document.getElementById("description02"),
+        name: document.getElementById("name-project02"),
+        box: document.getElementById("project-box-02")
+    },
+    {
+        type: document.getElementById("type-project03"),
+        img: document.getElementById("project03"),
+        summary: document.getElementById("summary03"),
+        description: document.getElementById("description03"),
+        name: document.getElementById("name-project03"),
+        box: document.getElementById("project-box-03")
+    },
+    {
+        type: document.getElementById("type-project04"),
+        img: document.getElementById("project04"),
+        summary: document.getElementById("summary04"),
+        description: document.getElementById("description04"),
+        name: document.getElementById("name-project04"),
+        box: document.getElementById("project-box-04")
     }
-    else {
-        typeProject01.classList.remove('dataProject-activate');
-        description01.classList.remove('description');
-        project_box01.classList.remove('project-box-activate');
-        nameProject01.classList.remove('dataProject-activate');
-        summary01.removeAttribute('style', 'display: none');
-    }
-}
+]
 
-// Verifica se o 2° projeto já foi clicado, chama outra função
-function project02BoxClicked() {
-    if (isClicked02 === false) {
-        isClicked02 = true;
-    }
-    else {
-        isClicked02 = false;
-    }
-    projectBox02Render();
-}
-
-// Caso o projeto seja clicado ou não, a função irá abrir a descrição do projeto ou fechar a descrição.
-// Essa descrição possui um botão para o usuário abrir o projeto em outra aba do navegador
-function projectBox02Render() {
-    if (isClicked02 === true) {
-        typeProject02.classList.add('dataProject-activate');
-        description02.classList.add('description');
-        project_box02.classList.add('project-box-activate');
-        nameProject02.classList.add('dataProject-activate');
-        summary02.setAttribute('style', 'display: none');
-    }
-    else {
-        typeProject02.classList.remove('dataProject-activate');
-        description02.classList.remove('description');
-        project_box02.classList.remove('project-box-activate');
-        nameProject02.classList.remove('dataProject-activate');
-        summary02.removeAttribute('style', 'display: none');
-    }
-}
-
-// Verifica se o 3° projeto já foi clicado, chama outra função
-function project03BoxClicked() {
-    if (isClicked03 === false ){
-        isClicked03 = true;
-    }
-    else {
-        isClicked03 = false;
-    }
-    project03BoxRender()
-}
-
-// Caso o projeto seja clicado ou não, a função irá abrir a descrição do projeto ou fechar a descrição.
-// Essa descrição possui um botão para o usuário abrir o projeto em outra aba do navegador
-function project03BoxRender() {
-    if (isClicked03 === true){
-        typeProject03.classList.add('dataProject-activate');
-        description03.classList.add('description');
-        project_box03.classList.add('project-box-activate');
-        nameProject03.classList.add('dataProject-activate');
-        summary03.setAttribute('style', 'display: none');
-    }
-    else {
-        typeProject03.classList.remove('dataProject-activate');
-        description03.classList.remove('description');
-        project_box03.classList.remove('project-box-activate');
-        nameProject03.classList.remove('dataProject-activate');
-        summary03.removeAttribute('style', 'display: none');
-    }
-}
-
-// Verifica se o 4° projeto já foi clicado, chama outra função
-function project04BoxClicked() {
-    if (isClicked04 === false){
-        isClicked04 = true;
-    }
-    else {
-        isClicked04 = false;
-    }
-    project04BoxRender()
-}
-
-// Caso o projeto seja clicado ou não, a função irá abrir a descrição do projeto ou fechar a descrição.
-// Essa descrição possui um botão para o usuário abrir o projeto em outra aba do navegador
-function project04BoxRender() {
-    if (isClicked04 === true) {
-        typeProject04.classList.add('dataProject-activate');
-        description04.classList.add('description');
-        project_box04.classList.add('project-box-activate');
-        nameProject04.classList.add('dataProject-activate');
-        summary04.setAttribute('style', 'display: none');
-    }
-    else {
-        typeProject04.classList.remove('dataProject-activate');
-        description04.classList.remove('description');
-        project_box04.classList.remove('project-box-activate');
-        nameProject04.classList.remove('dataProject-activate');
-        summary04.removeAttribute('style', 'display: none');
-    }
-}
-
-// Bloco de redirect das redes
-
-// Redirect para o Github (podia ser feito no html, porém diversifiquei para js)
+// Abrindo uma nova aba pelo JavaScript para saber como se faz redirect por js puro 
 function redirectGithub() {
     const urlGit = "https://github.com/NikolasSantis";
     const newTab = window.open(urlGit, '_blank');

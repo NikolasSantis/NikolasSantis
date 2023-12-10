@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nicolas Page</title>
 
-    <link href="style.css" rel="stylesheet" type="text/css" >
+    <link href="style.css" rel="stylesheet">
+
+</head>
 <body>
 
     <!-- Container de apresentação -->
@@ -25,26 +28,35 @@
 
         <!-- Botão de GitHub -->
         <div id='link-github' class="redirect" title="Botão que levará ao GitHub">
-            <img id="personal-github" class="button" alt="Dicrect GitHub" src="./botoes/github-icon.png"> </img> <br>
+            <img class="button personal-redirect-icon" alt="Dicrect GitHub" 
+                src="./botoes/github-icon.png">
+            <br>
             <h6>GitHub</h6>
         </div>
 
         <!-- Botão de linkedin  -->
-        <a id="link-linkedin" class="redirect" href="https://www.linkedin.com/in/nicolas-t-g-santos-51b869262/" target="_blank" title="Botão que levará ao Linkedin">
-            <img id="personal-linkedin" class="button" alt="Direct Linkedin" src="./botoes/linkedin-icon.png"> </img>
-            <h6>Linkedin</h6>
+        <a id="link-linkedin" class="redirect" target="_blank" 
+            title="Botão que levará ao Linkedin"
+            href="https://www.linkedin.com/in/nicolas-t-g-santos-51b869262/">
+                <img class="button personal-redirect-icon" alt="Direct Linkedin" 
+                    src="./botoes/linkedin-icon.png">
+                <h6>Linkedin</h6>
         </a>
 
         <!-- Botão Gmail  -->
-        <a id="link-gmail" class="redirect" href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDsVnfnDjcFdXpMXpFbsncDSpChkLMTNTVcxlcRRQBVSzcGXdjwFpCDzQPVnbzwZDdVBqHQ" target="_blank" title="Botão que levará a enviar um email para o Gmail">
-            <img id="personal-gmail" class="button" alt="Direct Gmail" src="./botoes/gmail-icon.png"> </img>
-            <h6>Gmail</h6>
+        <a id="link-gmail" class="redirect" target="_blank" 
+            title="Botão que levará a enviar um email para o Gmail" 
+            href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDsVnfnDjcFdXpMXpFbsncDSpChkLMTNTVcxlcRRQBVSzcGXdjwFpCDzQPVnbzwZDdVBqHQ">
+                <img class="button personal-redirect-icon" alt="Direct Gmail" src="./botoes/gmail-icon.png">            
+                <h6>Gmail</h6>
         </a>
 
         <!-- Botão Instagram  -->
-        <a id="link-instagram" class="redirect" href="https://www.instagram.com/nicolassantos195/" target="_blank" title="Botão que levará ao Instagram">
-            <img id="personal-instagram" class="button" alt="Direct Instagram" src="./botoes/instagram-icon.png"> </img>
-            <h6>Instagram</h6>
+        <a id="link-instagram" class="redirect" target="_blank" 
+            title="Botão que levará ao Instagram" 
+            href="https://www.instagram.com/nicolassantos195/">
+                <img class="button personal-redirect-icon" alt="Direct Instagram" src="./botoes/instagram-icon.png">
+                <h6>Instagram</h6>
         </a>
 
     </section>
@@ -53,28 +65,48 @@
 
     <!-- Um container de projetos alinhados em 'row' -->
     <section>
-        <div class="topics"> <p1> Projects: </p1> </div>
+        <div class="topics"> <p> Projects: </p> </div>
 
         <div id="projects-container">
 
-            <!-- 2° 'row' de projetos  -->
+            <!-- 1° 'row' de projetos  -->
             <section id="projects-row01">
 
                 <!-- Box do 1° projeto da página  -->
                 <div id="project-box-01" class="project-box">
 
-                    <div id="type-project01" class="type-project"> Web Development </div>
-                    
-                    <div class="description-box">
-                        <img id="project01" class="image-project" alt="project01" title="Imagem do Projeto" src="./image-projects/Box Login.jpg">
-                        <div id="summary01" class="empty-space"> Uma possível representação da tela de login do jogo Pokemon </div>
-                        <div id="description01" class="empty-space">
-                            <span> Imaginação de como seria uma tela de login do jogo Pokemon, onde os jogadores possuem uma espécie de organizador de items e pokemons para auxiliar na sua jornada </span>
-                            <a href="./Pagina de Login/index.html" target="_blank"> <button class="redirect-button-project"> Acessar </button> </a>
-                        </div>
+                    <div id="type-project01" class="type-project"> 
+                        Web Development 
                     </div>
 
-                    <div id="name-project01" class="name-project"> Login na BOX do Pokemon </div>
+                    <div class="description-box">
+                        <img id="project01" class="image-project" alt="project01" 
+                            title="Imagem do Projeto" src="./image-projects/Box Login.jpg">
+
+                        <div id="summary01" class="empty-space"> 
+                            Uma possível representação da tela de login do jogo Pokemon 
+                        </div>
+
+                        <div id="description01" class="empty-space">
+                            <span> 
+                                Imaginação de como seria uma tela de login do jogo 
+                                Pokemon, onde os jogadores possuem uma espécie de 
+                                organizador de items e pokemons para auxiliar 
+                                na sua jornada 
+                            </span>
+                            
+                            <a href="./Pagina de Login/index.html" target="_blank"> 
+                                <button class="redirect-button-project"> 
+                                    Acessar 
+                                </button> 
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div id="name-project01" class="name-project"> 
+                        Login na BOX do Pokemon 
+                    </div>
                 </div>
                 <!-- Fim da Box do 1° projeto da página  -->
 
@@ -82,15 +114,26 @@
                 <!-- Box do 2° projeto da página  -->
                 <div id="project-box-02" class="project-box">
 
-                    <div id="type-project02" class="type-project"> Web Development </div>
+                    <div id="type-project02" class="type-project"> 
+                        Web Development 
+                    </div>
                     
                     <div class="description-box">
-                        <img id="project02" class="image-project" alt="project02" title="Imagem do Projeto" src="./image-projects/image.jpg"> </img>
-                        <div id="summary02" class="empty-space"> Resumo do projeto</div>
-                        <div id="description02" class="empty-space"> Descrição da obra</div>
+                        <img id="project02" class="image-project" alt="project02" 
+                            title="Imagem do Projeto" src="./image-projects/image.jpg">
+                        
+                            <div id="summary02" class="empty-space"> 
+                            Resumo do projeto 
+                        </div>
+                        
+                        <div id="description02" class="empty-space"> 
+                            Descrição da obra 
+                        </div>
                     </div>
 
-                    <div id="name-project02" class="name-project"> Name project </div>
+                    <div id="name-project02" class="name-project"> 
+                        Name project 
+                    </div>
                 </div>
                 <!-- Fim da Box do 2° projeto da página  -->
 
@@ -102,15 +145,26 @@
 
                 <!-- Box do 3° projeto da página -->
                 <div id="project-box-03" class="project-box">
-                    <div id="type-project03" class="type-project"> Web Development </div>
+                    <div id="type-project03" class="type-project"> 
+                        Web Development 
+                    </div>
 
                     <div class="description-box">
-                        <img id="project03" class="image-project" alt="project03" title="Imagem do Projeto" src="./image-projects/image.jpg"> </img>
-                        <div id="summary03" class="empty-space"> Resumo do projeto</div>
-                        <div id="description03" class="empty-space"> Descrição da obra </div>
+                        <img id="project03" class="image-project" alt="project03" 
+                            title="Imagem do Projeto" src="./image-projects/image.jpg">
+
+                        <div id="summary03" class="empty-space"> 
+                            Resumo do projeto
+                        </div>
+                        
+                        <div id="description03" class="empty-space"> 
+                            Descrição da obra 
+                        </div>
                     </div>
                     
-                    <div id="name-project03" class="name-project"> Name project </div>
+                    <div id="name-project03" class="name-project"> 
+                        Name project 
+                    </div>
                 </div>
                 <!-- Fim da Box do 3° projeto da página  -->
 
@@ -120,12 +174,22 @@
                     <div id="type-project04" class="type-project"> Web Development </div>
 
                     <div class="description-box">
-                        <img id="project04" class="image-project" alt="project04" title="Imagem do Projeto" src="./image-projects/image.jpg"> </img>
-                        <div id="summary04" class="empty-space"> Resumo do projeto</div>
-                        <div id="description04" class="empty-space"> Descrição da obra</div>
+                        <img id="project04" class="image-project" alt="project04" 
+                            title="Imagem do Projeto" src="./image-projects/image.jpg">
+                        
+                        <div id="summary04" class="empty-space"> 
+                            Resumo do projeto
+                        
+                        </div>
+                        
+                        <div id="description04" class="empty-space"> 
+                            Descrição da obra
+                        </div>
                     </div>
                     
-                    <div id="name-project04" class="name-project"> Name project </div>
+                    <div id="name-project04" class="name-project"> 
+                        Name project 
+                    </div>
                 </div>
                 <!-- Fim Box do 4° projeto da página  -->
 
@@ -133,10 +197,8 @@
             <!-- Fim da 2° 'row' de projetos  -->
 
         </div>
-
     </section>
     <!-- Fim container de projetos alinhados em 'row' -->
-
 
     <script src="./script.js"> </script>
 </body>

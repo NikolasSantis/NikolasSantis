@@ -206,5 +206,8 @@ a {
 .dataProject-activate {
     background-color: none;
     color: rgb(255, 255, 255);
-    /* margin: 10px 0 0 5px; */
+}
+
+.display {
+    display: none;
 }

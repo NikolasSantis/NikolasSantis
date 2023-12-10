@@ -26,6 +26,7 @@ a {
     align-items: center;
     margin: 1em 0 1.5em 0;
 }
+
 #name {
     font-size: 2em;
     color: inherit;
@@ -40,6 +41,10 @@ a {
     margin: 0.5em 0 0 0;
 }
 
+.data {
+    color: rgb(221, 221, 221);
+}
+
 #links-container {
     background-color: rgb(0, 0, 0);
     width: inherit;
@@ -51,23 +56,36 @@ a {
     border-radius: 0.3em;
 }
 
-#personal-github {
-    width: 40.89px;
-    height: 40px;
+.redirect {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 50px;
+    border-radius: 30px;
+    cursor: pointer;
 }
 
 .redirect:hover{
     background-color: rgb(53, 53, 53);
 }
 
-#personal-gmail {
+.button {
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.personal-redirect-icon {
     width: 40.89px;
     height: 40px;
 }
 
-#personal-instagram {
-    width: 40.89px;
-    height: 40px;
+.topics{
+    margin: 1em 0 1.5em 5em;
+    justify-content: right;
 }
 
 #projects-container {
@@ -89,24 +107,13 @@ a {
 #type-project01:hover{
     background-color: none;
     color: white;
+    text-align: center;
+    max-width: 150px;
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 110px;
-    height: 50px;
-    border-radius: 30px;
-    cursor: pointer;
-}
-
-.button {
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-.topics{
-    margin: 1em 0 1.5em 5em;
-    justify-content: right;
+    cursor: auto;
+    transition-duration: 1.5s;
 }
 
 .project-box {
@@ -120,8 +127,6 @@ a {
     color: white;
     display: block;
     align-items: end;
-    /*width: inherit;
-    height: inherit;*/
     max-width: 250px;
     height: 35px;
     cursor: normal;
@@ -131,7 +136,6 @@ a {
     background-color: none;
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
 }
 
 .image-project {
@@ -164,8 +168,13 @@ a {
     margin-top: 10px;
 }
 
-.mouseover {
-    background-color: rgb(53, 53, 53);
+#projects-row02 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    margin-top: 2em;
 }
 
 .summary {
